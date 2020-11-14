@@ -15,10 +15,10 @@ router.post("/products/create", Controller.ProductCreate)
 router.post("/banner/create", Controller.BannerCreate)
 
 router.get('/products/:id', authorization, Controller.ProductsShowById)
-router.get('/products/:id', authorization, Controller.ProductsShowById)
+router.get('/banner/:id', authorization, Controller.BannerShowById)
 
 router.put("/products/:id", authorization, Controller.ProductsEdit)
-router.put("/products/:id", authorization, Controller.ProductsEdit)
+router.put("/banner/:id", authorization, Controller.BannerEdit)
 
 router.delete("/products/delete/:id", authorization, Controller.ProductsDelete)
 router.delete("/banner/delete/:id", authorization, Controller.BannerDelete)
